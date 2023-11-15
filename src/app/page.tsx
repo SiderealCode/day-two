@@ -12,6 +12,7 @@ export default function ListPage() {
       <div>
         {dummies.map((dummy) => (
           <ListItem
+            key={dummy.prefix}
             prefix={dummy.prefix}
             title={dummy.title}
             subtitle={dummy.subtitle}
